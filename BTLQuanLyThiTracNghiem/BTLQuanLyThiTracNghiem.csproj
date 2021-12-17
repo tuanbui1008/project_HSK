@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C56308D-285B-44C7-95DD-E9515DE824EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BTLQuanLyThiTracNghiem</RootNamespace>
+    <AssemblyName>BTLQuanLyThiTracNghiem</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormQLCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQLCH.Designer.cs">
+      <DependentUpon>FormQLCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuestsion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormQuestsion.Designer.cs">
+      <DependentUpon>FormQuestsion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportQLHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportQLHS.Designer.cs">
+      <DependentUpon>FormReportQLHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportQLKQC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportQLKQC.Designer.cs">
+      <DependentUpon>FormReportQLKQC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainQuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainQuanLy.Designer.cs">
+      <DependentUpon>MainQuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLHS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QLHS.Designer.cs">
+      <DependentUpon>QLHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLKQChung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QLKQChung.Designer.cs">
+      <DependentUpon>QLKQChung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportQLHS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reportQLHS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportQLKQchung.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reportQLKQchung.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Trangchu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trangchu.Designer.cs">
+      <DependentUpon>Trangchu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormQLCH.resx">
+      <DependentUpon>FormQLCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuestsion.resx">
+      <DependentUpon>FormQuestsion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportQLHS.resx">
+      <DependentUpon>FormReportQLHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportQLKQC.resx">
+      <DependentUpon>FormReportQLKQC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainQuanLy.resx">
+      <DependentUpon>MainQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QLHS.resx">
+      <DependentUpon>QLHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLKQChung.resx">
+      <DependentUpon>QLKQChung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportQLHS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reportQLHS.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportQLKQchung.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reportQLKQchung.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trangchu.resx">
+      <DependentUpon>Trangchu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
